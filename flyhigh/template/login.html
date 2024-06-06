@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>FLY HIGH explore the world</title>
+    <link rel="shortcut icon" type="image/icon" href="{% static 'logo/plane logo.jpeg' %}"/>
+
+</head>
+<body>
+
+<h1>LOGIN</h1>
+    <form action="{% url 'Login' %}" method="post">
+        {% csrf_token %}
+        username:<input type="text" name="username"><br>
+        password:<input type="text" name="password"><br>
+        <input type="submit" value="login">
+    </form>
+
+</body>
+</html>
