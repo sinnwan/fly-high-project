@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background color: #DEF2F1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-bar {
+    background-color: #3AAFA9;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-link {
+    margin-right: 20px;
+}
+
+.home-link img {
+    height: 60px;
+    width: auto;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #17252A;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    margin-left: 100px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+
+.login-container {
+    background-color: #DEF2F1;
+    padding: 50px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3AAFA9;
+    border: none;
+    border-radius: 10px;
+    color: #17252A;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.login-container button [type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-container .login-prompt {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container .login-prompt a {
+    text-decoration: none;
+    color: #3AAFA9;
+}
+
+.login-container .login-prompt a:hover {
+    color: #2B7A78;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #17252A;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #17252A;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    margin: 10px;
+}
+
+.footer a:hover {
+    color: #2B7A78;
+    transition: 0.3s;
+}
+
+.footer li: hover {
+    background-color: f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: red;
+}

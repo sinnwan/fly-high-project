@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>profile</title>
+    <title>edit profile</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/edit-profile.css' %}">
 </head>
 <body>
     <form action="profile" method="post">
@@ -19,28 +19,32 @@
         </nav>
 
         <div class="container">
-            <h2>PROFILE</h2>
+            <h2>EDIT PROFILE</h2>
             <div class="item">
                 <span class="label">First Name</span>
-                {{ data.first_name }}
+                <input type="text" class="value" name="first_name" value="{{ data.first_name }}">
             </div>
             <div class="item">
                 <span class="label">Last Name</span>
-                <div class="value"></div>{{ data.last_name }}
+                <input type="text" class="value" name="last_name" value="{{ data.last_name }}">
             </div>
             <div class="item">
                 <span class="label">Username</span>
-                {{ data.username }}
+                <input type="text" class="value" name="user_name" value="{{ data.user_name }}">
             </div>
             <div class="item">
                 <span class="label">Email</span>
-                <div class="value"></div>{{ data.email }}
+                <input type="email" class="value" name="email" value="{{ data.email }}">
             </div>
             <div class="item">
                 <span class="label">Phone Number</span>
-                <div class="value"></div>{{ data.phone_no }}
+                <input type="number" class="value" name="password" value="{{ data.phone_no }}">
             </div>
-            <a href="{% url 'edit_profile' %}"><button type="button" class="submit-button">Edit</button></a>
+            <div class="item">
+                <span class="label">Password</span>
+                <input type="password" class="value" name="password" value="{{ data.phone_no }}">
+            </div>
+            <button type="submit" class="submit-button">submit</button></a>
 
         </div>
     </form>

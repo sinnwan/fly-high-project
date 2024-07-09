@@ -3,19 +3,43 @@
 <head>
     {% load static %}
     <meta charset="UTF-8">
-    <title>FLY HIGH explore the world</title>
+    <title>FlyHigh login</title>
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="shortcut icon" type="image/icon" href="{% static 'logo/plane logo.jpeg' %}"/>
 
 </head>
 <body>
-
-<h1>LOGIN</h1>
-    <form action="{% url 'Login' %}" method="post">
-        {% csrf_token %}
-        username:<input type="text" name="username"><br>
-        password:<input type="text" name="password"><br>
-        <input type="submit" value="login">
-    </form>
-
+	<form action="Login" method="post">
+		{% csrf_token %}
+		<nav class="nav-bar">
+			<div class="logo">
+				<h1>FlyHigh!</h1>
+			</div>
+			<a href="/" class="home-link">
+				<img src="{% static 'logo/homelogo.png' %}" alt="home">
+			</a>
+		</nav>
+		<div class="main-content">
+        	<div class="login-container">
+            	<form action="Login" method="post">
+                	{% csrf_token %}
+                	<h2>Login</h2>
+                	<div class="input-group">
+                    	<label for="user_name">Username</label>
+                    	<input type="text" id="user_name" name="user_name" placeholder="Username" required>
+                	</div>
+                	<div class="input-group">
+                    	<label for="password">Password</label>
+                   	 	<input type="password" id="password" name="password" placeholder="Password" required>
+                	</div>
+                	<button type="submit">Login</button>
+            	</form>
+            	<p class="login-prompt">Don't have an account?<a href="{% url 'Login' %}">Login In</a></p>
+        	</div>
+    	</div>
+	</form>
+	<footer class="footer">
+        <p>All rights reserved. Copyright (2002 - 2024) - FlyHigh©</p>
+    </footer>
 </body>
 </html>

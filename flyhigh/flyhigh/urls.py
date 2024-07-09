@@ -24,6 +24,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name="home"),
     path('Login',views.Login,name="Login"),
+    path('about',views.about,name="about"),
+    path('user',views.user_register,name="user"),
+    path('company',views.company_register,name="company"),
+    path('profile',views.profile,name="profile"),
+    path('about',views.about,name="about"),
+    path('edit_profile',views.edit_profile,name="edit_profile"),
+    path('Logout',views.Logout,name="Logout"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
